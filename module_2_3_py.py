@@ -1,13 +1,14 @@
 my_list = [42, 69, 322, 13, 0, 99, -5, 9, 8, 7, -6, 5]
-i = 0
-number = [42, 69, 322, 13, 0, 99, 9, 8, 7, 5]
+index_lst = -1
 
-while i < len(my_list)):
-    my_list = int(input(my_list))
-    print(my_list)
+while index_lst < len(my_list):
+    index_lst = index_lst + 1
 
-    if number[i] < 0:
+    if my_list[index_lst] == 0:
+
+        continue
+    elif my_list[index_lst] < 0:
+
         break
-    print(number[i])
-
-
+    else:
+        print(my_list[index_lst])
