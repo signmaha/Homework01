@@ -2,10 +2,11 @@ def get_matrix(n, m, value):
     matrix = [] + []
     for row in range(n):  # внешний цикл для строк
         matrix.append([])
-    for column in range(m):  # внутренний цикл для столбцов
-        matrix[row].append(value)
-    # matrix.append(row)
-    return (matrix)
+        for column in range(m):  # внутренний цикл для столбцов
+            matrix[row].append(value)
+
+
+    print(matrix)
 
 
 result1 = get_matrix(2, 2, 10)
